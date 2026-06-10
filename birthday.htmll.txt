@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            color: white;
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 60px;
+            animation: glow 1s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px white;
+            }
+            to {
+                text-shadow: 0 0 30px yellow;
+            }
+        }
+
+        img {
+            width: 250px;
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background: gold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: orange;
+        }
+
+        #message {
+            font-size: 30px;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎂 Happy Birthday! 🎂</h1>
+
+    <img src="C:\Users\user\Downloads\happy-birthday-wishes-with-colorful-festive-design_123891-136846.avif"alt="Birthday Cake">
+
+    <br>
+
+    <button onclick="showMessage()">
+        Open Birthday Wish 🎁
+    </button>
+
+    <p id="message">
+        🎉 Wishing you happiness, success, and lots of cake! 🎉
+    </p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
